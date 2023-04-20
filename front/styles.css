@@ -1,0 +1,175 @@
+article h2{
+    color: #021446;
+    font-size: 48px;
+    text-align: center;
+}
+article p{
+    line-height: 2em;
+    color:#5c5c9a;
+}
+.banner{
+    position: relative;
+    
+}
+.banner img{
+    display: block;
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.banner .welcome{
+    color: #cee8ff;
+    position: absolute;
+    left: 25;
+    top:20%;
+    text-align: center;
+}
+.banner h1 span{
+    font-size: 1.2em;
+}
+body,ul,li,h1,h5,a{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+footer{
+    font-size: small;
+    color: #cee8ff;
+    background: #021446;
+    padding: 10px;
+    text-align: center;
+}
+form input{
+    margin : 20px 0;
+    padding:  10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+}
+header{
+    background-color: #021446;
+    text-align: center;
+    padding: 0.1px; 
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+   
+}
+header h1{
+    color: #cee8ff;
+    border: 8px solid #cee8ff;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 36px;
+}
+section.join{
+    background:#cee8ff ;
+    text-align: center;
+    padding: 60px 20px;
+    color: #021446;
+}
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+.images li img{
+    max-width: 100%;
+}
+.join h2{
+    font-size: 36px;
+}
+
+main{
+    max-width: 100%;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #cee8ff;
+    padding: 20px;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin :0 auto;
+}
+nav li{
+    display: inline-block;
+    font-size: medium;
+    width: 33.33%;
+}
+nav li a{
+    text-decoration: none;
+    color: #021446;
+}
+nav li a.join{
+    color:#cee8ff;
+}
+
+/* pseudo classes */
+nav li a:hover{
+    text-decoration: underline;
+}
+
+.images li:hover{
+    position: relative;
+    top: -4px;
+}
+
+form input:focus{
+    border: 4px dashed #cee8ff;
+    outline: none;
+}
+
+form input:valid{
+    border: 4px solid green;
+}
+
+/* responsive styles */
+@media screen and (max-width:700px) {
+    .banner .welcome h1{
+        font-size:medium;
+    }
+    header{
+        position: relative;
+    }
+    .images li{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+    nav li{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:250px) {
+    .banner .welcome {
+        top: 2;
+        left: 0;
+    }
+    .banner .welcome h1{
+        font-size:xx-small;
+    }
+    
+  
+    nav li{
+        font-size: 20px;
+        position: relative;
+        display: block;
+        margin: 12px 0;
+        width: 100%;
+    }
+}
